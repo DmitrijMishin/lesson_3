@@ -1,4 +1,4 @@
-body{
+html{
     font-family: sans-serif;
 }
 .paragraph{
@@ -8,7 +8,7 @@ body{
 }
 .title1{
     font-size: 64px;
-    color: #1F3F68
+    color: #1F3F68;
 }
 .title2{
     font-weight: 500;
