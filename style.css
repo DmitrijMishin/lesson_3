@@ -1,5 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
 body{
     font-family: sans-serif;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.title1 {
+    width: 510px;
+ }
+.paragraph_top_info {
+    width: 425px;
+    
+}
+.part_main_info {
+    width: 359px;
+}
+.main_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.final_content{
+    width: 495px;
+}
+.title3_final_info{
+    width: 340px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
 }
 .paragraph{
     font-size: 16px;
