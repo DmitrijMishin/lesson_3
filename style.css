@@ -8,12 +8,12 @@ body{
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -36,6 +36,7 @@ body{
     background-image: url(img/top_back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .top_button {
@@ -96,10 +97,6 @@ body{
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
-}
-
-.project {
-
 }
 
 .project__img {
@@ -305,6 +302,196 @@ hr {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        min-height: inherit;
+    }
+
+    
+
+    .top_info {
+        background-position: right 280px;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footer__top {
+        padding-bottom: 64px;
+    }
+
+    .footer__text {
+        width: 336px;
+        margin-left: 92px;
+    }
+
+    .heading_footer__top {
+        width: 336px;
+    }
+
+    .footer_button {
+        padding: 4px 30px;
+        margin-right: 51px;
+    }
+
+    .footer__info {
+        padding: 64px 0;
+        flex-direction: column;
+        margin-left: 88px;
+    }
+
+    .footer__list {
+        padding-bottom: 25px;
+    }
+
+    .footer__copy {
+    margin-top: 0;
+    margin-left: 86px;
+    }
+}
+
+@media (max-width:667px) {
+    .header{
+        padding-top: 24px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .top_info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top_heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .top_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .card-box {
+        padding-top: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .text_project {
+        width: 100%;
+    }
+
+    .project__text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__item_margin_text {
+        left: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+    }
+
+    .project__item_car_text {
+        left: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+    }
+
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__item_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .footer {
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    .footer__top {
+        padding-bottom: 41px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer__text {
+        margin: auto;
+        width: 100%;
+    }
+
+    .heading_footer__top {
+        text-align: center;
+        width: 100%;
+    }
+
+    .text__footer_top {
+        margin-bottom: 32px;
+    }
+
+    .footer_button {
+        margin-right: 0;
+    }
+
+    .footer__info {
+        padding: 32px 0;
+        margin-left: 0;
+    }
+
+    .footer__list {
+        padding-bottom: 17px;
+    }
+
+    .footer__copy {
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 
